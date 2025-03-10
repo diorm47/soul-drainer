@@ -853,6 +853,51 @@ footer {
   display: none;
 }
 
+.mobile_menu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 111;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  transform: translateX(100%);
+}
+.visible_mobile_menu {
+  transition: all 0.4s ease;
+  transform: translateX(0);
+}
+.mob_exit {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  top: 35px;
+  right: 10px;
+}
+
+.mobile_menu .nav_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.mobile_menu .nav_menu p {
+  color: #fff;
+  font-family: Spectral SC;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1500px) {
   .container_s,
   .container {
@@ -1391,7 +1436,8 @@ footer {
     height: 220px;
   }
   .fantasy_block_wrapper .block_title,
-  .fantasy_card, .gather_block  {
+  .fantasy_card,
+  .gather_block {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -1405,11 +1451,11 @@ footer {
   .fantasy_carousel {
     height: 300px;
   }
-  .fantasy_carousel .ramka{
+  .fantasy_carousel .ramka {
     height: 100%;
   }
 
-  .fantasy_carousel .swiper-slide img  {
+  .fantasy_carousel .swiper-slide img {
     height: 284px;
     object-fit: cover;
   }

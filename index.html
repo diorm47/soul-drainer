@@ -20,11 +20,11 @@
             <img src="./assets/icons/btm-arrow.svg" alt="" />
           </div>
           <div class="nav_menu">
-            <p>About Game</p>
-            <p>Media</p>
-            <p>Earn</p>
-            <p>FAQ</p>
-            <p>Social Media</p>
+            <a href="#about" class="scroll-link"><p>About Game</p></a>
+            <a href="#media" class="scroll-link"><p>Media</p></a>
+            <a href="#earn" class="scroll-link"><p>Earn</p></a>
+            <a href="#faq" class="scroll-link"> <p>FAQ</p></a>
+            <a href="#socials" class="scroll-link"><p>Social Media</p></a>
           </div>
           <a href="./index.html">
             <img class="nav_logo" src="./assets/logo.svg" alt="" />
@@ -39,7 +39,7 @@
             <button class="nav_btn">Connect Wallet</button>
           </div>
           <div class="menu_icon hidden">
-            <img src="./assets/icons/menu.svg" alt="" />
+            <img onclick="toggleMenu()" src="./assets/icons/menu.svg" alt="" />
           </div>
         </nav>
         <div class="header_content container_s">
@@ -57,7 +57,26 @@
       <img class="border_btm" src="./assets/images/bg-border-btm.svg" alt="" />
     </header>
 
-    <div class="gather_block_wrapper">
+    <div class="mobile_menu">
+      <div class="mob_exit">
+        <img
+          onclick="toggleMenu()"
+          src="./assets/icons/close-menu.svg"
+          alt=""
+        />
+      </div>
+      <div class="nav_menu"  onclick="toggleMenu()">
+        <a href="#about" class="scroll-link"><p>About Game</p></a>
+        <a href="#media" class="scroll-link"><p>Media</p></a>
+        <a href="#earn" class="scroll-link"><p>Earn</p></a>
+        <a href="#faq" class="scroll-link"> <p>FAQ</p></a>
+        <a href="#socials" class="scroll-link"><p>Social Media</p></a>
+        <a href="#"><p>How to buy?</p></a>
+      </div>
+      <button class="nav_btn">Connect Wallet</button>
+    </div>
+
+    <div id="media" class="gather_block_wrapper">
       <div class="gather_block container">
         <div class="gather_block_desc">
           <h3>Gather your party</h3>
@@ -156,7 +175,7 @@
         <button class="bg_btn hidden">Soon\In progress</button>
       </div>
     </div>
-    <div class="fantasy_block">
+    <div id="about" class="fantasy_block">
       <img
         class="bg_top_border"
         src="./assets/images/bg-border-top.svg"
@@ -846,7 +865,7 @@
       </div>
     </div>
 
-    <div class="earn">
+    <div id="earn" class="earn">
       <div class="container earn_wrapper">
         <div class="earn_video">
           <img class="ramka" src="./assets/images/earn-ramka.png" alt="" />
@@ -880,7 +899,7 @@
       <img src="./assets/images/stats circle.svg" alt="" />
     </div>
 
-    <div class="faq">
+    <div id="faq" class="faq">
       <div class="faq_wrapper container">
         <div class="block_title">
           <h3>FAQ</h3>
@@ -1022,7 +1041,7 @@
       </div>
     </div>
 
-    <footer>
+    <footer id="socials">
       <div class="partners container">
         <img src="./assets/images/partners/1.png" alt="" />
         <img src="./assets/images/partners/2.png" alt="" />
@@ -1130,37 +1149,6 @@
       });
     </script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".faq_item").forEach((item) => {
-          const title = item.querySelector(".faq_item_title");
-          const desc = item.querySelector(".faq_item_descr");
-          const openIcon = item.querySelector(".open_faq");
-          const closeIcon = item.querySelector(".close_faq");
-
-          title.addEventListener("click", () => {
-            const isActive = item.classList.contains("active_faq_item");
-
-            document.querySelectorAll(".faq_item").forEach((faq) => {
-              faq.classList.remove("active_faq_item");
-            });
-
-            if (!isActive) {
-              item.classList.add("active_faq_item");
-            }
-          });
-        });
-      });
-    </script>
-
-    <script>
-      let scrollList = document.getElementById("scrollList");
-      function startScroll() {
-        scrollList.style.animationPlayState = "running";
-      }
-      function pauseScroll() {
-        scrollList.style.animationPlayState = "paused";
-      }
-    </script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
