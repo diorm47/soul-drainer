@@ -955,6 +955,10 @@ video {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .header_content {
+    position: relative;
+    padding: 25px;
+  }
 }
 
 @media only screen and (max-width: 1050px) {
@@ -1367,7 +1371,7 @@ video {
     padding-bottom: 120px;
   }
   .earn_video .ramka {
-    height: 375px;
+    height: 430px;
   }
   .earn_video {
     padding: 10px;
@@ -1528,4 +1532,10 @@ video {
     background-position: center;
     background-size: cover;
   }
+}
+
+@media only screen and (max-width: 400px) {
+.earn_video .ramka {
+  height: 380px;
+}
 }
