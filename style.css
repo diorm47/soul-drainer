@@ -6,7 +6,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 button {
   cursor: pointer;
   transition: all 0.4s ease;
@@ -341,9 +343,15 @@ nav p {
   grid-template-columns: repeat(2, 1fr);
   gap: 100px;
 }
+.win_way_slide_img {
+  position: relative;
+}
 
 .win_way_slide_img img {
   width: 100%;
+}
+.ramka_kv {
+  height: 380px;
 }
 
 .win_way_slide_desc h3 {
@@ -455,16 +463,15 @@ nav p {
   max-width: 458px;
 }
 
-
 .gather_block_desc h4 {
   color: rgb(240, 240, 240);
-font-family: Montserrat Alternates;
-font-size: 10px;
-font-weight: 400;
-line-height: 19px;
-letter-spacing: 0%;
-text-align: left;
-margin-top: 50px;
+  font-family: Montserrat Alternates;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 50px;
 }
 
 .pc_require {
@@ -476,4 +483,207 @@ margin-top: 50px;
 
 .pc_req_img {
   width: 70%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 140px;
+}
+.pc_req_image {
+  position: relative;
+  width: 85%;
+  z-index: 2;
+}
+
+.employees {
+  padding: 120px 0 120px;
+}
+
+.employees_carousel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 38px;
+}
+
+.employe_text h3,
+.earn_wrapper h3 {
+  color: rgb(210, 210, 210);
+  font-family: Spectral SC;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 61px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 42px;
+}
+
+.employe_text p,
+.earn_wrapper p,
+.earn_wrapper p a {
+  color: rgb(240, 240, 240);
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  margin-bottom: 42px;
+  text-align: left;
+}
+
+.employee_desc img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.employee_desc p {
+  margin: 30px 0;
+  color: rgb(235, 235, 235);
+  font-family: Spectral SC;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 80%;
+}
+
+.employee_desc span {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat Alternates;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.employee_desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.employe_text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.earn {
+  padding: 250px 0;
+  background: url(./assets/images/earn-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.earn_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.earn_video,
+.earn_wrapper div {
+  width: 50%;
+}
+.earn_video {
+  position: relative;
+  padding: 20px;
+}
+
+.earn_video .ramka {
+  height: 700px;
+}
+.stats {
+  padding: 120px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq {
+  padding: 250px 0;
+  background: url(./assets/images/faq-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  padding: 50px 0;
+}
+
+.footer_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer_menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 0;
+}
+
+.footer_menu p,
+.footer_menu a p {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.footer_right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.footer_links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer_link {
+  width: 51px;
+  height: 51px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_btn {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.employee_carousel {
+  overflow: hidden;
+}
+
+.employees_pag {
+  height: 10px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
