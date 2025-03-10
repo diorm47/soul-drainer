@@ -687,3 +687,71 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
+.faq_item_title {
+
+  background: rgb(0, 0, 0);
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 35px;
+  height: 155px;
+  background: url(./assets/images/faq-item-bg.png);
+  background-position: top;
+  background-size: cover;
+  padding-left: 65px;
+}
+
+.faq_item_title h4 {
+  color: rgb(255, 255, 255);
+  font-family: Spectral SC;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 100%;
+  background: #000;
+}
+
+.faq_item_descr {
+  width: 95%;
+margin: 0 auto;
+  background: #000;
+  padding: 0 23px 23px;
+  padding-left: 30px;
+  display: none;
+  transition: all 0.4s ease;
+  padding-top: 30px;
+  margin-top: -40px;
+}
+.faq_item {
+  transition: all 0.4s ease;
+  width: 100%;
+}
+.active_faq_item .faq_item_descr {
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.faq_item_descr p {
+  color: rgb(255, 255, 255);
+  font-family: Spectral SC;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: none;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+
+}
+
+.partners img {
+  max-width: 130px;
+}

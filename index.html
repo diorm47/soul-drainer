@@ -748,7 +748,6 @@
       <img src="./assets/images/stats circle.svg" alt="" />
     </div>
 
-    <!-- asdafa -->
     <div class="faq">
       <div class="faq_wrapper container">
         <div class="block_title">
@@ -759,10 +758,107 @@
             and more.
           </p>
         </div>
+
+        <div class="faq_list">
+          <div class="faq_item">
+            <div class="faq_item_title">
+              <h4>How to buy?</h4>
+            </div>
+            <div class="faq_item_descr">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique eius iure possimus molestiae consequuntur quidem quam
+                ipsam vero saepe praesentium architecto, ducimus perspiciatis
+                commodi enim beatae corrupti dolore odio illum. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Similique eius iure
+                possimus molestiae consequuntur quidem quam ipsam vero saepe
+                praesentium architecto, ducimus perspiciatis commodi enim beatae
+                corrupti dolore odio illum.
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <div class="faq_item_title">
+              <h4>How to earn?</h4>
+            </div>
+            <div class="faq_item_descr">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique eius iure possimus molestiae consequuntur quidem quam
+                ipsam vero saepe praesentium architecto, ducimus perspiciatis
+                commodi enim beatae corrupti dolore odio illum. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Similique eius iure
+                possimus molestiae consequuntur quidem quam ipsam vero saepe
+                praesentium architecto, ducimus perspiciatis commodi enim beatae
+                corrupti dolore odio illum.
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <div class="faq_item_title">
+              <h4>Tockenomics</h4>
+            </div>
+            <div class="faq_item_descr">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique eius iure possimus molestiae consequuntur quidem quam
+                ipsam vero saepe praesentium architecto, ducimus perspiciatis
+                commodi enim beatae corrupti dolore odio illum. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Similique eius iure
+                possimus molestiae consequuntur quidem quam ipsam vero saepe
+                praesentium architecto, ducimus perspiciatis commodi enim beatae
+                corrupti dolore odio illum.
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <div class="faq_item_title">
+              <h4>Presale details?</h4>
+            </div>
+            <div class="faq_item_descr">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique eius iure possimus molestiae consequuntur quidem quam
+                ipsam vero saepe praesentium architecto, ducimus perspiciatis
+                commodi enim beatae corrupti dolore odio illum. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Similique eius iure
+                possimus molestiae consequuntur quidem quam ipsam vero saepe
+                praesentium architecto, ducimus perspiciatis commodi enim beatae
+                corrupti dolore odio illum.
+              </p>
+            </div>
+          </div>
+          <div class="faq_item">
+            <div class="faq_item_title">
+              <h4>When launch?</h4>
+            </div>
+            <div class="faq_item_descr">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique eius iure possimus molestiae consequuntur quidem quam
+                ipsam vero saepe praesentium architecto, ducimus perspiciatis
+                commodi enim beatae corrupti dolore odio illum. Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Similique eius iure
+                possimus molestiae consequuntur quidem quam ipsam vero saepe
+                praesentium architecto, ducimus perspiciatis commodi enim beatae
+                corrupti dolore odio illum.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <footer>
+      <div class="partners container">
+        <img src="./assets/images/partners/1.png" alt="" />
+        <img src="./assets/images/partners/2.png" alt="" />
+        <img src="./assets/images/partners/3.png" alt="" />
+        <img src="./assets/images/partners/4.png" alt="" />
+        <img src="./assets/images/partners/5.jpg" alt="" />
+        <img src="./assets/images/partners/6.png" alt="" />
+        <img src="./assets/images/partners/7.png" alt="" />
+      </div>
       <div class="footer_wrapper container">
         <div class="footer_left">
           <a href="./index.html"
@@ -851,6 +947,29 @@
           el: ".employee_pagination",
           clickable: true,
         },
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".faq_item").forEach((item) => {
+          const title = item.querySelector(".faq_item_title");
+          const desc = item.querySelector(".faq_item_descr");
+          const openIcon = item.querySelector(".open_faq");
+          const closeIcon = item.querySelector(".close_faq");
+
+          title.addEventListener("click", () => {
+            const isActive = item.classList.contains("active_faq_item");
+
+            document.querySelectorAll(".faq_item").forEach((faq) => {
+              faq.classList.remove("active_faq_item");
+            });
+
+            if (!isActive) {
+              item.classList.add("active_faq_item");
+            }
+          });
+        });
       });
     </script>
   </body>
