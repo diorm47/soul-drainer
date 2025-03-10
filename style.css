@@ -56,6 +56,10 @@ nav {
 .nav_logo {
   margin-right: -30px;
 }
+.nav_right a p:hover,
+.nav_menu p:hover {
+  text-decoration: underline;
+}
 
 nav p {
   color: #fff;
@@ -93,6 +97,14 @@ nav p {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: center;
+}
+.footer_link {
+  transition: all 0.4s ease;
+}
+.nav_btn:hover,
+.footer_link:hover {
+  background: rgba(215, 215, 215, 0.255);
+  transition: all 0.4s ease;
 }
 
 .header_content {
@@ -284,7 +296,20 @@ nav p {
   position: relative;
   z-index: 3;
 }
-
+.header_btn:hover,
+.bg_btn:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.02);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  transition: all 0.4s ease;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.06) !important;
+}
 .reviews_block {
   padding: 120px 0 130px;
 }
@@ -644,6 +669,9 @@ footer {
   letter-spacing: 0%;
   text-align: left;
 }
+.footer_menu a p:hover {
+  text-decoration: underline;
+}
 
 .footer_right {
   display: flex;
@@ -689,7 +717,6 @@ footer {
 }
 
 .faq_item_title {
-
   background: rgb(0, 0, 0);
 
   display: flex;
@@ -716,7 +743,7 @@ footer {
 
 .faq_item_descr {
   width: 95%;
-margin: 0 auto;
+  margin: 0 auto;
   background: #000;
   padding: 0 23px 23px;
   padding-left: 30px;
@@ -734,11 +761,11 @@ margin: 0 auto;
   transition: all 0.4s ease;
 }
 
-.faq_item_descr p {
+.faq_item_descr p, .faq_item_descr a  {
   color: rgb(255, 255, 255);
-  font-family: Spectral SC;
+  font-family: Montserrat Alternates;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0%;
   text-align: left;
   text-transform: none;
@@ -749,9 +776,68 @@ margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 30px;
-
 }
 
 .partners img {
   max-width: 130px;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.gather_block_wrapper {
+  position: relative;
+}
+.water_fell {
+  height: 420px;
+  width: 64%;
+  position: absolute;
+  right: 0;
+}
+.image-container {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.top_bg_shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.btm_bg_shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  animation: scrollUp 15s linear infinite paused;
+}
+
+.image-list img {
+  width: 100%;
+}
+
+.gather_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gather_block_wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
 }
