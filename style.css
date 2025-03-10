@@ -21,6 +21,10 @@ body {
   font-family: "Spectral SC", serif;
 }
 
+.main_wrapper {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
