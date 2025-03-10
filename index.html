@@ -75,7 +75,7 @@
             data-aos-duration="1500"
           >
             <img class="ramka" src="./assets/images/ramka.png" alt="" />
-            <video class="header_img" autoplay muted loop>
+            <video class="header_img" autoplay muted loop playsinline>
               <source src="./assets/video/header-video.mp4" type="video/mp4" />
             </video>
             <div class="header_button">
@@ -128,11 +128,7 @@
           </div>
 
           <div class="water_fell">
-            <div
-              class="image-container"
-              onmouseenter="startScroll()"
-              onmouseleave="pauseScroll()"
-            >
+            <div class="image-container">
               <img
                 class="top_bg_shadow"
                 src="./assets/images/waterfell-bg-border/1.png"
@@ -798,6 +794,7 @@
             class="ramka s_req_ramka"
             src="./assets/images/pc-req.png"
             alt=""
+            onclick="toggleReqs()"
           />
           <img class="pc_req_image" src="/assets/images/sys-req.png" alt="" />
         </div>
@@ -989,7 +986,13 @@
             data-aos-duration="1500"
           >
             <img class="ramka" src="./assets/images/earn-ramka.png" alt="" />
-            <video class="header_img earn_video_f" autoplay muted loop>
+            <video
+              class="header_img earn_video_f"
+              autoplay
+              muted
+              loop
+              playsinline
+            >
               <source src="./assets/video/earn.mp4" type="video/mp4" />
             </video>
           </div>
@@ -1263,10 +1266,21 @@
       </footer>
     </div>
 
+    <div class="requires_big">
+      <div class="sys_req_big_exit">
+        <img
+          onclick="toggleReqs()"
+          src="./assets/icons/close-menu.svg"
+          alt=""
+        />
+      </div>
+      <img class="sys_req_big" src="./assets/images/sys-req.png" alt="" />
+    </div>
+
     <script>
       var swiper = new Swiper(".swiper-container", {
         slidesPerView: 1,
-
+        speed: 1500,
         navigation: {
           nextEl: ".f_sn",
           prevEl: ".f_sp",
@@ -1286,6 +1300,7 @@
 
       var swiper = new Swiper(".win_way_carousel", {
         slidesPerView: 1,
+        speed: 1500,
         pagination: {
           el: ".win_way_pagination",
           clickable: true,
@@ -1298,6 +1313,7 @@
 
       var swiper = new Swiper(".gallery_carousel", {
         slidesPerView: 1,
+        speed: 1500,
         pagination: {
           el: ".gallery_pagination",
           clickable: true,
@@ -1310,6 +1326,7 @@
 
       var swiper = new Swiper(".employee_carousel", {
         slidesPerView: 1,
+        speed: 1500,
         pagination: {
           el: ".employee_pagination",
           clickable: true,

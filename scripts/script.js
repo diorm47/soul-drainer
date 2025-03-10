@@ -14,15 +14,6 @@ document.querySelectorAll(".scroll-link").forEach((anchor) => {
   });
 });
 
-// waterfall animation
-let scrollList = document.getElementById("scrollList");
-function startScroll() {
-  scrollList.style.animationPlayState = "running";
-}
-function pauseScroll() {
-  scrollList.style.animationPlayState = "paused";
-}
-
 // faq item
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".faq_item").forEach((item) => {
@@ -50,4 +41,9 @@ function toggleMenu() {
   document
     .querySelector(".mobile_menu")
     .classList.toggle("visible_mobile_menu");
+}
+
+// toggle reqs
+function toggleReqs() {
+  document.querySelector(".requires_big").classList.toggle("vis_requires_big");
 }
