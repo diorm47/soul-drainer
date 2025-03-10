@@ -761,7 +761,8 @@ footer {
   transition: all 0.4s ease;
 }
 
-.faq_item_descr p, .faq_item_descr a  {
+.faq_item_descr p,
+.faq_item_descr a {
   color: rgb(255, 255, 255);
   font-family: Montserrat Alternates;
   font-size: 20px;
@@ -840,4 +841,579 @@ footer {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+.menu_icon {
+  width: 60px;
+}
+.reviews_mob {
+  display: none;
+}
+
+@media only screen and (max-width: 1500px) {
+  .container_s,
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .reviews_mob {
+    display: block;
+  }
+  .image-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    animation: scrollUp 15slinear infinite paused;
+  }
+  .water_fell {
+    height: 420px;
+    width: 50%;
+    position: absolute;
+    right: 0;
+  }
+  .stats img {
+    width: 100%;
+  }
+
+  .footer_wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .partners {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav_right,
+  .nav_menu {
+    display: none;
+  }
+  .hidden {
+    display: flex;
+  }
+  .nav_logo {
+    margin: 0;
+    width: 170px;
+  }
+  .header_btn img {
+    width: 300px;
+  }
+  .header_button {
+    margin-top: -60px;
+  }
+  .header_wrapper {
+    padding-bottom: 100px;
+  }
+  .menu_icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .fantasy_block,
+  .gallery,
+  .earn,
+  .faq {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+  .reviews_block {
+    padding: 60px 0;
+  }
+  .win_way {
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .fantasy_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .win_way_slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer_left {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .header_content {
+    margin: 0;
+    padding: 7px;
+  }
+  .header_btn img {
+    width: 280px;
+  }
+  .header_button {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .gather_block {
+    padding: 50px 0;
+  }
+  .gather_block {
+    flex-direction: column;
+    gap: 0;
+  }
+  .water_fell {
+    position: static;
+    width: 100%;
+  }
+  .bg_btn {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    height: 73px;
+    background: url(./assets/images/orange-btn-bg-mob.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .image-list {
+    gap: 12px;
+  }
+  .gather_block_desc h3 {
+    color: rgb(210, 210, 210);
+    font-family: Spectral SC;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .gather_block_desc p {
+    color: rgb(240, 240, 240);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  br {
+    display: none;
+  }
+  .hide {
+    display: none;
+  }
+  .gather_block_desc p {
+    margin-bottom: 30px;
+  }
+  .top_bg_shadow,
+  .btm_bg_shadow {
+    width: auto;
+  }
+  .water_fell {
+    height: 340px;
+    margin-bottom: 30px;
+  }
+  .bg_btn.hidden {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .fantasy_block,
+  .gallery,
+  .earn,
+  .faq {
+    padding: 70px 0;
+  }
+  .container_s .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .block_title h3 {
+    color: rgb(210, 210, 210);
+    font-family: Spectral SC;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .block_title p {
+    color: rgb(240, 240, 240);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .block_title {
+    margin-bottom: 30px;
+  }
+  .fantasy_card img {
+    width: 70px;
+    margin: 0;
+  }
+  .fantasy_card {
+    gap: 25px;
+  }
+  .fantasy_card p {
+    color: rgb(240, 240, 240);
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .fantasy_cards {
+    margin-bottom: 40px;
+  }
+  .container_s {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .fantasy_carousel {
+    padding: 6px;
+  }
+  .fantasy_carousel .swiper-button-next {
+    right: 20px !important;
+  }
+  .fantasy_carousel .swiper-button-prev {
+    left: 20px !important;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 20px !important;
+  }
+  .review_card {
+    width: 100%;
+  }
+  .reviews_carousel {
+    display: none;
+  }
+  /* .reviews_mob {
+    padding-left: 10px;
+    padding-right: 10px;
+  } */
+  .review_card {
+    height: auto;
+    padding: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .review_card h4 {
+    color: rgb(223, 223, 223);
+    font-family: Spectral SC;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .review_card p {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .reviews_mob .bg_btn {
+    margin-top: 20px;
+  }
+  .reviews_block {
+    padding: 50px 0;
+  }
+
+  .win_way_slide {
+    gap: 30px;
+  }
+  .win_way_slide_desc h3 {
+    color: rgb(210, 210, 210);
+    font-family: Spectral SC;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .win_way_slide_desc p {
+    color: rgb(240, 240, 240);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .win_way_slide_desc {
+    display: block;
+  }
+  .win_way .carousel_actions {
+    display: none;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+  .gallery_slide_right {
+    display: none;
+  }
+  .gallery_slide {
+    display: flex;
+  }
+  .gallery_carousel .carousel_actions {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    height: auto;
+    width: 100%;
+  }
+  .gallery_carousel {
+    position: relative;
+  }
+  .pc_require {
+    padding: 30px 0;
+  }
+  .pc_require {
+    flex-direction: column;
+  }
+  .pc_req_img {
+    width: 100%;
+  }
+  .pc_req_img {
+    padding-top: 30px;
+  }
+  .pc_req_img .s_req_ramka {
+    height: 230px;
+  }
+  .employees_carousel {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .employees {
+    padding: 30px 12px 0;
+  }
+  .employee_desc p {
+    color: rgb(235, 235, 235);
+    font-family: Spectral SC;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .employee_desc span {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .employe_text h3,
+  .earn_wrapper h3 {
+    color: rgb(210, 210, 210);
+    font-family: Spectral SC;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .employe_text p,
+  .earn_wrapper p,
+  .earn_wrapper p a {
+    color: rgb(240, 240, 240);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .earn_wrapper {
+    flex-direction: column;
+  }
+  .earn_video,
+  .earn_wrapper div {
+    width: 100%;
+  }
+  .earn,
+  .earn_wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .earn,
+  .faq {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .earn_video .ramka {
+    height: 375px;
+  }
+  .earn_video {
+    padding: 10px;
+  }
+  .earn_wrapper p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .stats {
+    padding: 20px 12px;
+  }
+  .faq_item_title h4 {
+    color: rgb(255, 255, 255);
+    font-family: Spectral SC;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+  footer {
+    padding: 40px 0;
+  }
+  .footer_logo {
+    width: 177px;
+  }
+  .footer_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_menu {
+    gap: 20px;
+  }
+
+  .footer_menu p,
+  .footer_menu a p {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat Alternates;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .footer_right {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer_right .footer_btn {
+    width: 100%;
+  }
+  .partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .partners img {
+    width: 100%;
+  }
+  .faq_item_title {
+    padding: 35px;
+    height: 108px;
+    background: url(./assets/images/faq-item-bg-mob.png);
+    background-position: top;
+    background-size: cover;
+    padding-left: 40px;
+  }
+  .faq_wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .faq_item_descr p,
+  .faq_item_descr a {
+    font-size: 16px;
+  }
+  .gather_block_desc {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .gather_block_desc h4 {
+    color: rgb(240, 240, 240);
+    font-family: Montserrat Alternates;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 28px;
+  }
+  .pc_require {
+    gap: 0;
+  }
+  .pc_req_img {
+    margin-bottom: 60px;
+  }
+  .down_btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .down_btn p {
+    color: rgb(240, 240, 240);
+    font-family: Montserrat Alternates;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 28px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .employe_text h3 {
+    display: none;
+  }
+  .employees_pag {
+    display: none;
+  }
+  .review_card h4 {
+    margin-bottom: 0;
+  }
+  .fantasy_carousel .ramka {
+    height: 220px;
+  }
+  .fantasy_block_wrapper .block_title,
+  .fantasy_card, .gather_block  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header_content {
+    padding: 7px;
+  }
+  .image-container .top_bg_shadow,
+  .image-container .btm_bg_shadow {
+    width: 100%;
+  }
+  .fantasy_carousel {
+    height: 300px;
+  }
+  .fantasy_carousel .ramka{
+    height: 100%;
+  }
+
+  .fantasy_carousel .swiper-slide img  {
+    height: 284px;
+    object-fit: cover;
+  }
+  .win_way_slide .ramka {
+    height: 200px;
+  }
 }

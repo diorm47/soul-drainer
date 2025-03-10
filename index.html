@@ -15,6 +15,10 @@
     <header>
       <div class="header_wrapper">
         <nav class="container">
+          <div class="nav_lang hidden">
+            <p>Eng</p>
+            <img src="./assets/icons/btm-arrow.svg" alt="" />
+          </div>
           <div class="nav_menu">
             <p>About Game</p>
             <p>Media</p>
@@ -33,6 +37,9 @@
             <a href="#"><p>How to buy?</p></a>
 
             <button class="nav_btn">Connect Wallet</button>
+          </div>
+          <div class="menu_icon hidden">
+            <img src="./assets/icons/menu.svg" alt="" />
           </div>
         </nav>
         <div class="header_content container_s">
@@ -59,7 +66,7 @@
             gear, merchendise and more.
           </p>
 
-          <button class="bg_btn">Soon\In progress</button>
+          <button class="bg_btn hide">Soon\In progress</button>
         </div>
 
         <div class="water_fell">
@@ -146,6 +153,7 @@
             />
           </div>
         </div>
+        <button class="bg_btn hidden">Soon\In progress</button>
       </div>
     </div>
     <div class="fantasy_block">
@@ -322,6 +330,33 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="reviews_mob">
+        <div class="review_card">
+          <h4>Fantasy Reimagined. Action Redefined.</h4>
+          <p>
+            Donec interdum a ipsum in sollicitudin. Vestibulum nec vulputate
+            diam. Quisque nibh justo, fermentum quis neque id, luctus auctor
+            magna. Vestibulum tempus vehicula nisi eu imperdiet.
+          </p>
+        </div>
+        <div class="review_card">
+          <h4>Fantasy Reimagined. Action Redefined.</h4>
+          <p>
+            Donec interdum a ipsum in sollicitudin. Vestibulum nec vulputate
+            diam. Quisque nibh justo, fermentum quis neque id, luctus auctor
+            magna. Vestibulum tempus vehicula nisi eu imperdiet.
+          </p>
+        </div>
+        <div class="review_card">
+          <h4>Fantasy Reimagined. Action Redefined.</h4>
+          <p>
+            Donec interdum a ipsum in sollicitudin. Vestibulum nec vulputate
+            diam. Quisque nibh justo, fermentum quis neque id, luctus auctor
+            magna. Vestibulum tempus vehicula nisi eu imperdiet.
+          </p>
+        </div>
+        <button class="bg_btn">Show more</button>
       </div>
     </div>
 
@@ -634,8 +669,8 @@
           more.
         </p>
 
-        <button class="bg_btn">Download</button>
-        <h4>
+        <button class="bg_btn hide">Download</button>
+        <h4 class="hide">
           *At the moment, you can pre-download the game launcher, but the
           servers are not yet live, and the game has not entered public beta.
           The exact launch date for the servers will be announced later, though
@@ -651,6 +686,17 @@
           alt=""
         />
         <img class="pc_req_image" src="/assets/images/sys-req.png" alt="" />
+      </div>
+      <div class="hidden down_btn">
+        <button class="bg_btn">Download</button>
+        <p>
+          *At the moment, you can pre-download the game launcher, but the
+          servers are not yet live, and the game has not entered public beta.
+          The exact launch date for the servers will be announced later, though
+          it won’t happen before Q2 2025. <br /><br />
+          For more information, please refer to the FAQ section and our
+          documentation.
+        </p>
       </div>
     </div>
 
@@ -1042,13 +1088,13 @@
       var swiper = new Swiper(".reviews_carousel", {
         slidesPerView: "auto",
         spaceBetween: 24,
-        loop: true, 
-        speed: 5000, 
+        loop: true,
+        speed: 5000,
         autoplay: {
-          delay: 0, 
+          delay: 0,
           disableOnInteraction: false,
         },
-        allowTouchMove: false, 
+        allowTouchMove: false,
       });
 
       var swiper = new Swiper(".win_way_carousel", {
