@@ -471,13 +471,21 @@ nav p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px 38px;
+  max-width: 100%; /* Ограничение ширины */
+  overflow: hidden;
 }
 
 .gallery_slide_right img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+
+  display: block;
 }
+.gallery_slide_right > * {
+  min-width: 0;
+}
+
 
 .gallery_carousel {
   width: 100%;
