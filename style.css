@@ -486,7 +486,6 @@ nav p {
   min-width: 0;
 }
 
-
 .gallery_carousel {
   width: 100%;
   overflow: hidden;
@@ -733,6 +732,7 @@ footer {
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
   cursor: pointer;
   padding: 35px;
   height: 155px;
@@ -740,6 +740,10 @@ footer {
   background-position: top;
   background-size: cover;
   padding-left: 65px;
+}
+.faq_chev {
+  display: none;
+  transition: all 0.4s ease;
 }
 
 .faq_item_title h4 {
@@ -775,6 +779,10 @@ footer {
   opacity: 1;
   padding-top: 30px;
   padding-bottom: 23px;
+}
+.active_faq_item .faq_chev {
+  transition: all 0.4s ease;
+  transform: rotate(-180deg);
 }
 
 .faq_item_descr p,
@@ -1039,6 +1047,10 @@ video {
 }
 
 @media only screen and (max-width: 500px) {
+  .faq_chev {
+    display: flex;
+    margin-right: 10px;
+  }
   .sys_req_big_exit {
     right: auto;
     justify-content: center;
@@ -1273,8 +1285,15 @@ video {
   .win_way_slide_desc {
     display: block;
   }
-  .win_way .carousel_actions {
+  .win_way .carousel_actions .swiper-pagination {
     display: none;
+  }
+  .win_way .carousel_actions {
+    justify-content: space-between;
+    padding: 0 20px;
+    position: absolute;
+    top: 45px;
+    width: 100%;
   }
   .swiper-pagination {
     display: none;
@@ -1540,10 +1559,17 @@ video {
     background-position: center;
     background-size: cover;
   }
+  .win_way_slide_img img,
+  .win_way_slide .ramka {
+    height: 250px;
+  }
+  .win_way_slide_img img:nth-child(2) {
+    object-fit: cover;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-.earn_video .ramka {
-  height: 380px;
-}
+  .earn_video .ramka {
+    height: 380px;
+  }
 }
