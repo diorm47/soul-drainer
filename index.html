@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
   </head>
   <body>
     <div class="main_wrapper">
@@ -79,9 +80,10 @@
               <source src="./assets/video/header-video.mp4" type="video/mp4" />
             </video>
             <div class="header_button">
-              <button class="header_btn">
-                <img src="./assets/icons/header-btn.svg" alt="" />
-              </button>
+          
+                <button class="header_btn">
+                  <img src="./assets/icons/header-btn.svg" alt="" /></button
+              >
             </div>
           </div>
         </div>
@@ -1018,13 +1020,8 @@
         </div>
       </div>
 
-      <div class="stats container">
-        <img
-          data-aos="fade-up"
-          data-aos-duration="1500"
-          src="./assets/images/stats circle.svg"
-          alt=""
-        />
+      <div class="stats container" data-aos="fade-up" data-aos-duration="1500">
+        <div id="chart"></div>
       </div>
 
       <div id="faq" class="faq">
@@ -1080,7 +1077,7 @@
               data-aos-duration="1500"
             >
               <div class="faq_item_title">
-                <h4>How to earn?</h4>
+                <h4>- How to earn?</h4>
                 <img
                   class="faq_chev"
                   src="./assets/icons/chev-down.svg"

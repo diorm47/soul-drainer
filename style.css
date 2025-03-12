@@ -642,6 +642,13 @@ nav p {
   justify-content: center;
 }
 
+#chart {
+  width: 70%;
+}
+.apexcharts-legend.apx-legend-position-left  {
+  justify-content: center !important;
+}
+
 .faq {
   padding: 250px 0;
   background: url(./assets/images/faq-bg.png);
@@ -812,7 +819,7 @@ footer {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
 }
 
@@ -848,7 +855,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
-  animation: scrollUp 15s linear infinite;
+  animation: scrollUp 80s linear infinite;
   animation-play-state: running;
 }
 
@@ -975,12 +982,14 @@ video {
     position: relative;
     padding: 25px;
   }
+
 }
 
 @media only screen and (max-width: 1050px) {
-  .reviews_mob {
-    display: block;
+  .earn_video .ramka {
+    height: auto;
   }
+
   .image-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1010,9 +1019,7 @@ video {
   .nav_menu {
     display: none;
   }
-  .hidden {
-    display: flex;
-  }
+
   .nav_logo {
     margin: 0;
     width: 170px;
@@ -1046,7 +1053,10 @@ video {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
+  .reviews_mob {
+    display: block;
+  }
   .faq_chev {
     display: flex;
     margin-right: 10px;
@@ -1565,6 +1575,19 @@ video {
   }
   .win_way_slide_img img:nth-child(2) {
     object-fit: cover;
+  }
+  #chart {
+    width: 100%;
+  }
+  .earn_video {
+    width: 380px !important;
+    height: 380px !important;
+  }
+  .earn_video .ramka {
+    height: 100%;
+  }
+  .hidden {
+    display: flex;
   }
 }
 
