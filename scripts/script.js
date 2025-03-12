@@ -18,7 +18,7 @@ document.querySelectorAll(".header_btn").forEach((anchor) => {
   anchor.addEventListener("click", function (event) {
     event.preventDefault();
 
-    const targetElement = document.querySelector("#media");
+    const targetElement = document.querySelector("#gather");
 
     if (targetElement) {
       window.scrollTo({
