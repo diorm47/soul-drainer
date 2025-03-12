@@ -985,6 +985,9 @@ video {
 }
 
 @media only screen and (max-width: 1050px) {
+  .win_way_slide {
+    gap: 30px;
+  }
   .earn_video .ramka {
     height: auto;
   }
@@ -1052,6 +1055,29 @@ video {
   }
 }
 @media only screen and (max-width: 960px) {
+  .fantasy_cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .win_way_slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .win_way_slide_img img, .win_way_slide .ramka {
+    height: 450px;
+  }
+  .win_way_slide_img img:nth-child(2) {
+    object-fit: cover;
+  }
+  .win_way_slide_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+  }
+  .win_way_slide_desc p {
+    text-align: center;
+  }
   .gather_block {
     flex-direction: column;
     gap: 0;
