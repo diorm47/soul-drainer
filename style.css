@@ -645,7 +645,7 @@ nav p {
 #chart {
   width: 70%;
 }
-.apexcharts-legend.apx-legend-position-left  {
+.apexcharts-legend.apx-legend-position-left {
   justify-content: center !important;
 }
 
@@ -982,7 +982,6 @@ video {
     position: relative;
     padding: 25px;
   }
-
 }
 
 @media only screen and (max-width: 1050px) {
@@ -1052,7 +1051,66 @@ video {
     padding-bottom: 60px;
   }
 }
+@media only screen and (max-width: 960px) {
+  .gather_block {
+    flex-direction: column;
+    gap: 0;
+  }
+  .gather_block {
+    padding: 50px 0;
+  }
 
+  .water_fell {
+    position: static;
+    width: 100%;
+  }
+  .bg_btn {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    height: 73px;
+    background: url(./assets/images/orange-btn-bg-mob.png);
+    background-position: center;
+    background-size: cover;
+  }
+  .image-list {
+    gap: 12px;
+  }
+  .gather_block_desc h3 {
+    color: rgb(210, 210, 210);
+    font-family: Spectral SC;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .gather_block_desc p {
+    color: rgb(240, 240, 240);
+    font-family: Montserrat Alternates;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .gather_block .bg_btn.hide {
+    margin-bottom: 30px;
+  }
+
+  .earn_video {
+    width: 380px !important;
+    height: 380px !important;
+  }
+  .earn_video {
+    padding: 10px;
+  }
+  .earn_video .ramka {
+    height: 100%;
+  }
+}
 @media only screen and (max-width: 750px) {
   .reviews_mob {
     display: block;
@@ -1096,10 +1154,7 @@ video {
   .gather_block {
     padding: 50px 0;
   }
-  .gather_block {
-    flex-direction: column;
-    gap: 0;
-  }
+
   .water_fell {
     position: static;
     width: 100%;
